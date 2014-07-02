@@ -3,8 +3,11 @@
     // Proximity
 	var count=0;
 	var c1=document.getElementById("fname");
-    
-var proximity = document.querySelector("#proximity"),
+    var h=document.getElementById("height");
+    var w=document.getElementById("weight");
+    var bmi=document.querySelector("bmiv");
+var proximity = document.querySelector("#proximity");
+var calculate=document.querySelector("#calculate"),
         proximityDisplay = document.querySelector("#proximity-display");
     if (proximity && proximityDisplay) {
         proximity.onclick = function () {
@@ -28,6 +31,7 @@ var proximity = document.querySelector("#proximity"),
             };
         };
     }
+    
 	/*var bmibutton=document.querySelector("#bmi");
 		var bm=document.querySelector("#bv");
 	if(bmibutton && bm)
@@ -35,11 +39,18 @@ var proximity = document.querySelector("#proximity"),
 	bmibutton.onclick=function(){
 	bm.innerHTML=b;
 	}
-	} */
+	} 
 	function calculate(){
 	var h = document.getElementById("height");
 var w = document.getElementById("weight");
 var b=w/((h/100)*(h/100));
 document.getElementById("bv").innerHTML=25;
-	}
+	}*/
 })();
+
+function calculate(){
+	var h = document.getElementById("height").value;
+var w = document.getElementById("weight").value;
+var b=w/((h/100)*(h/100));
+document.getElementById("bv").innerHTML=b;
+	}

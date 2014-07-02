@@ -2,10 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-
+-->
+<link rel="stylesheet" href="jquery.mobile-1.4.3.css">
+<script src="jquery.js"></script>
+<script src="jquery.mobile-1.4.3.js"></script>
 
 </head>
 <body>
@@ -20,12 +23,12 @@
  &nbsp Hello Users!!! Welcome to iFirefox.You can choose your options from the Footer.<br><br>
  &nbsp Happy Using... :)
 </h2>
+</div>
 <div data-role="footer" data-position="fixed">
     <a href="#pagethree" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">Bmi Calculator</a>
     <a href="#pagefive" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-grid ui-btn-icon-left">Workouts</a>
 
 </div>
-	</div>
 </div>
 
 
@@ -47,7 +50,6 @@
 </div>
 
 
- 
 <div data-role="page" id="pagetwo">
 <div data-role="header">
   <h1>Counting Started</h1>
@@ -73,7 +75,7 @@
 <input type="text" name="height" id="height">
 <label for="weight">Weight</label>
 <input type="text" name="weight" id="weight">
- <input type="button" id="bmi" onclick="calculate();" value="Calculate">
+ <input type="button" id="bmi" onclick="calculate();" value="Calculate"> 
 <h1 id="bv" align="center"></h1>
 </div>
 <div data-role="footer" data-position="fixed">
@@ -83,7 +85,7 @@
   </div>
   
   
-  <div data-role="page" id="pagefive">
+<div data-role="page" id="pagefive">
   <div data-role="header">
   <h1>Work Outs</h1>
   </div>
@@ -97,40 +99,36 @@
     <a href="#pagethree" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">BMI Calculator</a>
     <a href="#pagefour" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     </div>
-	</div>
-
-	
-	
-	<div data-role="page" id="pagesix">
-  <div data-role="header">
-  <h1>Push Ups</h1>
-  </div>
-  <div data-role="main" class="ui-content">
-  <img src="/push-up1.jpg" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px"/>
-  <a href="#pageone" data-transition="slide" id="proximity" data-role="button">Continue</a> 
 </div>
-<div data-role="footer" data-position="fixed">
+
+	
+	
+	<div data-role="popup" id="pagesix">
+ 
+    <img src="push-up1.jpg"  alt="Skaret View">
+    <h2>Keep your Device in front of your Face as shown in the above image and Click on 'Continue'</h2>
+     <a href="#pageone" data-transition="slide" id="proximity" data-role="button">Continue</a> 
+   
+<!--<div data-role="footer" data-position="fixed">
     <a href="#pagefive" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left">Back</a>
     <a href="#pagefour" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <a href="#pagethree" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">BMI Calculator</a>
-    </div> 
+    </div> -->
   </div>
-  
   
 
-	<div data-role="page" id="pageseven">
-  <div data-role="header">
-  <h1>Chin Ups</h1>
-  </div>
-  <div data-role="main" class="ui-content">
-  <img src="/chinups.jpg" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px"/>
+	<div data-role="popup" id="pageseven">
+  
+  <img src="/chinups.jpg" alt="image"/>
+  <h2>Make Sure that the Device is Below Your Foot as Shown in the above image and Click on 'Continue'</h2>
 	<a href="#pageone" data-transition="slide" id="proximity" data-role="button">Continue</a> 
-  </div>
+  <!--
 <div data-role="footer" data-position="fixed">
     <a href="#pagefive" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left">Back</a>
     <a href="#pagefour" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <a href="#pagethree" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">BMI Calculator</a>
-    </div> 
+    </div>
+    --> 
   </div>
   
 	

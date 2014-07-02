@@ -1,4 +1,3 @@
-(function () {
 
     // Proximity
 	var count=0;
@@ -37,9 +36,9 @@ var proximity = document.querySelector("#proximity"),
 	}
 	} */
 	function calculate(){
-	var h = document.getElementById("height");
-var w = document.getElementById("weight");
+	var h = document.getElementById("height").value;
+var w = document.getElementById("weight").value;
 var b=w/((h/100)*(h/100));
-document.getElementById("bv").innerHTML=25;
+document.getElementById("bv").innerHTML=b;
 	}
-})();
+

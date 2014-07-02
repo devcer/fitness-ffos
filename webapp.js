@@ -28,6 +28,9 @@ var proximity = document.querySelector("#proximity"),
             };
         };
     }
+})();
+
+
 	/*var bmibutton=document.querySelector("#bmi");
 		var bm=document.querySelector("#bv");
 	if(bmibutton && bm)
@@ -36,10 +39,10 @@ var proximity = document.querySelector("#proximity"),
 	bm.innerHTML=b;
 	}
 	} */
+	
 	function calculate(){
-	var h = document.getElementById("height");
-var w = document.getElementById("weight");
+	var h = document.getElementById("height").value;
+var w = document.getElementById("weight").value;
 var b=w/((h/100)*(h/100));
-document.getElementById("bv").innerHTML=25;
+document.getElementById("bv").innerHTML=b;
 	}
-})();

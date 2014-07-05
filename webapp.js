@@ -3,49 +3,38 @@
     // Proximity
 	var count=0;
 	var c1=document.getElementById("fname");
-    var h=document.getElementById("height");
-    var w=document.getElementById("weight");
-    var bmi=document.querySelector("bmiv");
+    
 var proximity = document.querySelector("#proximity");
 var calculate=document.querySelector("#calculate"),
         proximityDisplay = document.querySelector("#proximity-display");
-    if (proximity && proximityDisplay) {
-        proximity.onclick = function () {
+    if (proximity && proximityDisplay)
+     {
+        proximity.onclick = function () 
+        {
             proximityDisplay.style.display = "block";
-            window.ondeviceproximity = function (event) {
+            window.ondeviceproximity = function (event) 
+            {
                 // Check proximity, in centimeters
 				
                 var prox;
                 
-				if(event.value==0){
+				if(event.value==0)
+				{
 				prox ="<strong>Count:</strong>" + count++;
 				if(count==c1.value)
 				{
 				navigator.vibrate(2000);
                 }
 				}
-				else{
+				else
+				{
 				prox ="<strong>Count:</strong>" + count;
 				}
 				proximityDisplay.innerHTML = prox;
             };
         };
     }
-    
-	/*var bmibutton=document.querySelector("#bmi");
-		var bm=document.querySelector("#bv");
-	if(bmibutton && bm)
-	{
-	bmibutton.onclick=function(){
-	bm.innerHTML=b;
-	}
-	} 
-	function calculate(){
-	var h = document.getElementById("height");
-var w = document.getElementById("weight");
-var b=w/((h/100)*(h/100));
-document.getElementById("bv").innerHTML=25;
-	}*/
+
 })();
 
 function calculate(){
@@ -53,4 +42,15 @@ function calculate(){
 var w = document.getElementById("weight").value;
 var b=w/((h/100)*(h/100));
 document.getElementById("bv").innerHTML=b;
+if(b<18.5){
+document.getElementById("status").innerHTML="<strong>Status:</strong> Underweight";
+}
+else if (b>=18.5 && b<25) {
+document.getElementById("status").innerHTML="<strong>Status:</strong> Normal weight";
+	}
+	else if(b>=25 && b<30) {
+document.getElementById("status").innerHTML="<strong>Status:</strong> Overweight";
+	}
+	else
+		document.getElementById("status").innerHTML="<strong>Status:</strong> Obesity";
 	}

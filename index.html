@@ -77,6 +77,7 @@
 <input type="text" name="weight" id="weight">
  <input type="button" id="bmi" onclick="calculate();" value="Calculate"> 
 <h1 id="bv" align="center"></h1>
+<h2 id="status" align="center"></h2>
 </div>
 <div data-role="footer" data-position="fixed">
     <a href="#pagefive" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-grid ui-btn-icon-left">Workouts</a>
@@ -103,36 +104,41 @@
 
 	
 	
-	<div data-role="popup" id="pagesix">
- 
+	<div data-role="page" id="pagesix">
+ <div data-role="header">
+  <h1>Push Ups</h1>
+  </div>
     <img src="push-up1.jpg"  alt="Skaret View">
     <h2>Keep your Device in front of your Face as shown in the above image and Click on 'Continue'</h2>
-     <a href="#pageone" data-transition="slide" id="proximity" data-role="button">Continue</a> 
+     <a href="#pageone" id="proximity" data-role="button">Continue</a> 
    
-<!--<div data-role="footer" data-position="fixed">
+<div data-role="footer" data-position="fixed">
     <a href="#pagefive" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left">Back</a>
-    <a href="#pagefour" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+<!--    <a href="#pagefour" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <a href="#pagethree" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">BMI Calculator</a>
     </div> -->
   </div>
+</div>
   
 
-	<div data-role="popup" id="pageseven">
-  
+	<div data-role="page" id="pageseven">
+  <div data-role="header">
+  <h1>Chin Ups</h1>
+  </div>
   <img src="/chinups.jpg" alt="image"/>
   <h2>Make Sure that the Device is Below Your Foot as Shown in the above image and Click on 'Continue'</h2>
-	<a href="#pageone" data-transition="slide" id="proximity" data-role="button">Continue</a> 
-  <!--
+	<a href="#pageone" id="proximity" data-role="button">Continue</a> 
+  
 <div data-role="footer" data-position="fixed">
     <a href="#pagefive" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left">Back</a>
-    <a href="#pagefour" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+  <!--  <a href="#pagefour" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
     <a href="#pagethree" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">BMI Calculator</a>
     </div>
     --> 
   </div>
-  
+  </div>
 	
 	
-	<script type="text/javascript" src="/webapp.js"></script>
+	<script type="text/javascript" src="webapp.js"></script>
 </body>
 </html>
